@@ -46,11 +46,33 @@ dev = [
 ]
 
 [project.urls]
-Repository = "https://github.com/tsplab/tsplab"
-Issues = "https://github.com/tsplab/tsplab/issues"
+Repository = "https://github.com/disdorqin/tsplab"
+Issues = "https://github.com/disdorqin/tsplab/issues"
+PyPI = "https://pypi.org/project/tsplab/"
 
 [tool.setuptools.packages.find]
 include = ["tsplab*"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+addopts = "-v --tb=short"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::FutureWarning",
+]
+
+[tool.coverage.run]
+source = ["tsplab"]
+omit = [
+    "*/tests/*",
+    "*/examples/*",
+    "tsplab/__init__.py",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
