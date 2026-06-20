@@ -1,8 +1,15 @@
 # TSPLab — Time Series Prediction Lab
 
+[![PyPI version](https://img.shields.io/pypi/v/tsplab.svg)](https://pypi.org/project/tsplab/)
+[![Python](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/disdorqin/tsplab.svg)](https://github.com/disdorqin/tsplab/stargazers)
+
 > **不是又一个时序预测框架，而是你实验的"质检站 + 驾驶舱"。**
 >
 > 你继续用自己的模型代码，TSPLab 负责帮你查数据泄漏、诊断训练、公平对比、自动调参、管理实验。
+
+> **One-line install:** `pip install tsplab`
 
 ## 为什么需要 TSPLab？
 
